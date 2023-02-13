@@ -104,3 +104,5 @@ print (compressed_bytes)
 print('\nDecoded Data: ')
 decompressed_bytes = huff.byte_decompress(compressed_bytes)
 print(bytes(decompressed_bytes))
+
+assert data == bytes(decompressed_bytes)
